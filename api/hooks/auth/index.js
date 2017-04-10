@@ -1,7 +1,7 @@
 let authHook = sails.hooks.auth;
 
 import _ from 'lodash'
-import Marlinspike from 'marlinspike'
+var Marlinspike = require('marlinspike');
 
 if (!authHook) {
   class Auth extends Marlinspike {

@@ -19,6 +19,14 @@ module.exports.passport = {
     strategy: require('passport-http').BasicStrategy,
     protocol: 'basic'
   },
+  jwt: {
+    strategy: require('passport-jwt').Strategy,
+    protocol: 'jwt',
+    options: {
+      jwtFromRequest: require('passport-jwt').ExtractJwt.fromAuthHeader(),
+      secretOrKey: 'secret'
+    }
+  }
 
   /*
   bearer: {

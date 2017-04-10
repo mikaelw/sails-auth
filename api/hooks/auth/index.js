@@ -1,6 +1,5 @@
 let authHook = sails.hooks.auth;
 
-import _ from 'lodash'
 var Marlinspike = require('marlinspike');
 
 if (!authHook) {

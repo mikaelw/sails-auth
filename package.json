@@ -38,8 +38,8 @@
   "dependencies": {
     "bcryptjs": "^2.2",
     "lodash": "^3.10",
-    "marlinspike": "^0.12",
-    "passport": "^0.3",
+    "marlinspike": "^1.0",
+    "passport": "^0.3.2",
     "passport-http": "^0.3",
     "passport-local": "^1.0.0"
   },
@@ -53,12 +53,12 @@
   "devDependencies": {
     "babel": "^5.8.21",
     "gulp": "^3.9.0",
-    "gulp-babel": "^5.2.1",
-    "mocha": "^1.21.4",
-    "sails": "balderdashy/sails",
+    "gulp-babel": "^5.3",
+    "mocha": "3.1.0",
+    "sails": "^0.12.5",
     "socket.io-client": "^1.3.5",
     "supertest": "^0.15.0",
-    "waterline-sqlite3": "^0.12.1"
+    "waterline-sqlite3": "^1.0.3"
   },
   "engines": {
     "node": ">= 0.12",

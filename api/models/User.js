@@ -52,5 +52,18 @@ module.exports = {
         resolve(created);
       });
     });
+  },
+
+  /**
+   * Update user info
+   */
+  updateUser: function(user) {
+    return new Promise((resolve, reject) => {
+      sails.services.passport.protocols.local.updateUser(user, (error, record) => {
+        if (error) reject(error);
+
+        resolve(record);
+      })
+    })
   }
 };
